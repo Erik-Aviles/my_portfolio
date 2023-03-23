@@ -1,5 +1,5 @@
 import React from "react";
-import Clients from "./components/Clients/Clients";
+import AboutMe from "./components/AboutMe/AboutMe";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 
@@ -10,7 +10,7 @@ function App() {
         <Header />
         <Hero />
       </div>
-      <Clients />
+      <AboutMe />
     </>
   );
 }
