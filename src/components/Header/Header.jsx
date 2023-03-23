@@ -7,20 +7,20 @@ const Header = () => {
   const [showMenu, setShowlMenu] = useState(false);
 
   return (
-    <header className="flex justify-between laptop:justify-start items-center w-full py-2 px-8  h-[10vh] z-50">
+    <header className="flex justify-between laptop:justify-start items-center w-full py-2 movil:pr-4 px-8  h-[10vh] z-50">
       <div className="laptop:w-1/6 text-center -mt-4">
         <a
           href="http://"
           className="tracking-tighter text-primary text-2xl font-bold relative p-1 bg-black "
         >
-          ERIKA<span className="text-5xl">.</span>
+          Erika Aviles<span className="text-5xl">.</span>
           <BsFillPeaceFill className="absolute -left-3 -bottom-3 laptop:-z-10 " />
         </a>
       </div>
       <nav
         className={`fixed text-white w-[80%] table:w-[40%] laptop:w-full h-full ${
           showMenu ? "left-0" : "-left-full"
-        } top-0 laptop:static flex-1 flex flex-col laptop:flex-row bg-black items-center justify-center gap-10 text-primary transition-all duration-500`}
+        } top-0 laptop:static flex-1 flex flex-col laptop:flex-row bg-black items-center justify-center gap-10 text-primary transition-all duration-500 z-20`}
       >
         <a href="http://">Inicio</a>
         <a href="http://">Sobre de mi</a>

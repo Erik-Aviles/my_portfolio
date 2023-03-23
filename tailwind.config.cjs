@@ -9,10 +9,14 @@ module.exports = {
       colors:{
         primary: '#09BBE0',
         secundary: '#333a6e',
-        dark_color: '#FBFBFB'
+        white: '#fff',
+        black: '#0E141B'
       }
+      // Noe Display(MEDIUM)) georgia(REGULAR) Segoe UI(REGULAR)
     },
     screens: {
+      'movil': '320px',
+       // => @media (min-width: 640px) { ... }
       'tablet': '640px',
       // => @media (min-width: 640px) { ... }
 
