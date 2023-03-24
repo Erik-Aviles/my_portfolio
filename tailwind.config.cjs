@@ -3,14 +3,16 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
       colors:{
         primary: '#09BBE0',
-        secundary: '#333a6e',
+        secundary: '#FFE742',
         white: '#fff',
-        black: '#0E141B'
+        black: '#0E141B',
+        darkBlack: '#24385b'
       }
       // Noe Display(MEDIUM)) georgia(REGULAR) Segoe UI(REGULAR)
     },
@@ -27,5 +29,7 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [],
+  plugins: [
+    require("flowbite/plugin")
+  ],
 }
